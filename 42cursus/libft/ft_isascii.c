@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/08 16:20:36 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/08 17:38:45 by edgarrod         ###   ########.fr       */
+/*   Created: 2024/11/08 18:14:13 by edgarrod          #+#    #+#             */
+/*   Updated: 2024/11/08 18:52:50 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int ft_isalpha(int i)
+int ft_isascii(int i)
 {
-    if (((i >= 'a') && (i <= 'z')) || ((i >= 'A') && (i <= 'Z')))
+    if (i >= 0 && i <= 127)
     {
         return 1;
     }
@@ -25,15 +25,20 @@ int ft_isalpha(int i)
         return 0;
     }
 }
+
 /*
 int main()
 {
-    char c;
+    int i;
 
-    c = 'A';
-    
-    printf("ft_isalpha: %d", ft_isalpha(c));
+    i = 0;
+    while (i <= 200)
+    {
+    printf("ft_isascii: %d", ft_isascii(i));
     printf("\n");
-    printf("isalpha: %d", isalpha(c));
+    printf("isascii: %d", isascii(i));
+    printf("\n");
+    i++;
+    }
 }
 */
