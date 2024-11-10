@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/10 17:45:49 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/10 19:58:20 by edgarrod         ###   ########.fr       */
+/*   Created: 2024/11/10 19:00:19 by edgarrod          #+#    #+#             */
+/*   Updated: 2024/11/10 21:05:35 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,41 +14,55 @@
 #include <stdio.h>
 #include <strings.h>
 
-void *ft_memcpy(void *dest, const *src, size_t i)
+void *ft_memmove(void *dest,  const void *src, size_t i)
 {
-    char *s;
     char *d;
+    char *s;
     size_t n;
-    
-    if (!src && !dest)
+
+    if (!dest && !src)
     {
         return NULL;
     }
-    
+
     d = (char *)dest;
     s = (char *)src;
     n = 0;
-    while (n < i)
+    if (d <= s)
     {
-        d[n] = s[n];
-        n++;
+        while (n < i)
+        {
+            d[n] = s[n];
+            n++;
+        }
     }
-    
-    return dest;
+    else
+    {
+        while (i > 0)
+        {
+            i--;
+            d[i] = s[i];
+        }
+        
+    }
+    return d;
 }
+
 /*
 int main()
 {
     char src[] = "Hello World!";
     char dest1[50];
     char dest2[50];
-    size_t i;
 
-    i = 5;
+    size_t i;
     
-    ft_memcpy(dest1, src, i);
-    printf("ft_memcpy: %s\n", dest1);
-    memcpy(dest2, src, i);
-    printf("   memcpy: %s\n", dest2);
-}
+    i = 7;
+
+    ft_memmove(dest1, src, i);
+    printf("ft_memmove: %s\n", dest1);
+    memmove(dest2, src, i);
+    printf("   memmove: %s\n", dest2);
+}  
 */
+ 
