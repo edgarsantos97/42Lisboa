@@ -6,7 +6,7 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 16:24:00 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/16 16:08:06 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/11/16 16:55:35 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,7 @@ void	*ft_memset(void *str, int c, size_t i)
 {
 	char	*ptr;
 
-	ptr = ( char *)str;
-
+	ptr = (char *)str;
 	while (i > 0)
 	{
 		ptr[i - 1] = c;
