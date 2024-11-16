@@ -6,34 +6,33 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 14:10:22 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/10 14:38:15 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/11/16 11:04:35 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
+#include "libft.h"
 #include <ctype.h>
+#include <stdio.h>
 #include <string.h>
+#include <unistd.h>
 
-size_t ft_strlen(const char *str)
+size_t	ft_strlen(const char *str)
 {
-    size_t i; //É um valor unsigned, que armazena valores positivos, 
-              //que adapta a tamanho de sistemas 32btis(4bytes) e 64bits(8bytes)
+	size_t	i;
 
-    i = 0;
-
-    while (str[i] != '\0')
-    {
-        i++;
-    }
-    return i;
+	i = 0;
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }
 /*
-int main()
+int	main(void)
 {
-    char c[] = "Hello World";
+	char	c[] = "Hello World";
 
-    printf("ft_strlrn: %lu\n", ft_strlen(c));
-    printf("strlen: %lu", strlen(c));
+	printf("ft_strlrn: %lu\n", ft_strlen(c));
+	printf("strlen: %lu", strlen(c));
 }
 */

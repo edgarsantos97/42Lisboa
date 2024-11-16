@@ -6,10 +6,11 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 19:18:36 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/11 20:16:51 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/11/16 10:30:41 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 #include <string.h>
 

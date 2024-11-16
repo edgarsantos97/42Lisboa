@@ -10,26 +10,25 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
 #include <ctype.h>
+#include <stdio.h>
+#include <unistd.h>
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-    if((c >= 'A') && ( c <= 'Z'))
-    {
-        c = c + 32;
-    }
-    return c;
+	if ((c >= 'A') && (c <= 'Z'))
+	{
+		c = c + 32;
+	}
+	return (c);
 }
 /*
-int main()
+int	main(void)
 {
-    char c;
+	char	c;
 
-    c = 'Z';
-
-    printf("ft_tolower: %d\n", ft_tolower(c));
-    printf("   tolower: %d\n", tolower(c));
+	c = 'Z';
+	printf("ft_tolower: %d\n", ft_tolower(c));
+	printf("   tolower: %d\n", tolower(c));
 }
 */

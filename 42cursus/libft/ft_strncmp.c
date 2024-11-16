@@ -6,10 +6,11 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 18:39:50 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/11 19:17:41 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/11/16 10:31:06 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
@@ -40,10 +41,13 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 /*
 int	main(void)
 {
-	char *str1 = "ADCD";
-	char *str2 = "ADC";
-	size_t n = 4;
+	char	*str1;
+	char	*str2;
+	size_t	n;
 
+	str1 = "ADCD";
+	str2 = "ADC";
+	n = 4;
 	printf("ft_strncmp: %d\n", ft_strncmp(str1, str2, n));
 	printf("   strncmp: %d\n", strncmp(str1, str2, n));
 }
