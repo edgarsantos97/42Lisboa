@@ -6,7 +6,7 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 21:06:41 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/16 10:31:00 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/11/16 12:12:31 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <strings.h>
 #include <unistd.h>
 
-int	ft_strlcpy(char *dest, const char *src, size_t n)
+size_t	ft_strlcpy(char *dest, const char *src, size_t n)
 {
 	size_t	i;
 

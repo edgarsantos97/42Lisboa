@@ -6,7 +6,7 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 17:23:02 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/16 10:30:21 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/11/16 12:10:59 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <strings.h>
 #include <unistd.h>
 
-void	*ft_bzero(void *s, size_t i)
+void	ft_bzero(void *s, size_t i)
 {
 	char	*c;
 	size_t	n;
@@ -27,7 +27,6 @@ void	*ft_bzero(void *s, size_t i)
 		c[n] = '\0';
 		n++;
 	}
-	return (s);
 }
 /*
 int	main(void)

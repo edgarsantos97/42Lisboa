@@ -6,7 +6,7 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 21:46:38 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/16 11:03:10 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/11/16 16:17:02 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <strings.h>
 #include <unistd.h>
 
-int	ft_strlcat(char *dest, const char *src, size_t n)
+size_t	ft_strlcat(char *dest, const char *src, size_t n)
 {
 	size_t	dest_len;
 	size_t	src_len;
@@ -24,6 +24,8 @@ int	ft_strlcat(char *dest, const char *src, size_t n)
 	dest_len = 0;
 	src_len = 0;
 	i = 0;
+	if (!dest && !n)
+		return (0);
 	while (dest[dest_len] != '\0' && dest_len < n)
 		dest_len++;
 	while (src[src_len] != '\0')
@@ -36,8 +38,9 @@ int	ft_strlcat(char *dest, const char *src, size_t n)
 		dest_len++;
 		i++;
 	}
-	dest[dest_len] = '\0';
-	return (dest_len + src_len);
+	if (dest_len < n)
+		dest[dest_len] = '\0';
+	return (dest_len + src_len - i);
 }
 /*
 int	main(void)

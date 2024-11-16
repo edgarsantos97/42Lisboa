@@ -6,7 +6,7 @@
 #    By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/16 10:04:24 by edgarrod          #+#    #+#              #
-#    Updated: 2024/11/16 10:21:55 by edgarrod         ###   ########.fr        #
+#    Updated: 2024/11/16 12:14:01 by edgarrod         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,32 +28,37 @@ SRCS =	ft_atoi.c \
 		ft_strlcat.c \
 		ft_strlcpy.c \
 		ft_strlen.c \
-		ft_strmcmp.c \
-		ft_strnstr.c \
+		ft_strncmp.c \
 		ft_strrchr.c \
 		ft_tolower.c \
 		ft_toupper.c 
+BONUS = 
 
-OBJS= $(srcs:.c+.o)
+OBJS= $(SRCS:.c=.o)
+OBJ_B= $(BONUS:.c=.o)
 
-CC		= CC
-RM		= rm -f
-CFLAGS		= -Wall -Wextra -Werror
+CC				= cc
+RM				= rm -f
+CFLAGS			= -Wall -Wextra -Werror
 
-all:		$(NAME)
+all:			$(NAME)
 
 %.o: %.c
-		$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@ 
 
 $(NAME):		$(OBJS)
-						ar rcs $(NAME) $(OBJS)
+				ar rcs $(NAME) $(OBJS)
+
+bonus:			$(OBJS) $(OBJ_B)
+				$(RM) $(NAME)
+				ar rcs $(NAME) $(OBJS) $(OBJ_B)
 
 clean:
-				$(RM) $(OBJS)
+				$(RM) $(OBJS) $(OBJ_B)
 
-fclean:		clean
+fclean:			clean
 				$(RM) $(NAME)
 
 re:				fclean $(NAME)
 
-.PHONY			all clean fclean re
+.PHONY:			all bonus clean fclean re
