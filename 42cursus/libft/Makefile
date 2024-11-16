@@ -6,7 +6,7 @@
 #    By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/16 10:04:24 by edgarrod          #+#    #+#              #
-#    Updated: 2024/11/16 12:14:01 by edgarrod         ###   ########.fr        #
+#    Updated: 2024/11/16 21:26:30 by edgarrod         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,6 +14,7 @@ NAME		= libft.a
 
 SRCS =	ft_atoi.c \
 		ft_bzero.c \
+		ft_calloc.c \
 		ft_isalnum.c \
 		ft_isalpha.c \
 		ft_isascii.c \
@@ -29,6 +30,7 @@ SRCS =	ft_atoi.c \
 		ft_strlcpy.c \
 		ft_strlen.c \
 		ft_strncmp.c \
+		ft_strnstr.c \
 		ft_strrchr.c \
 		ft_tolower.c \
 		ft_toupper.c 

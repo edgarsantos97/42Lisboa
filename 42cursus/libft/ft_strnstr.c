@@ -6,7 +6,7 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 20:19:55 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/16 16:53:33 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/11/16 20:55:18 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		return (NULL);
 	if (!little[0])
 		return ((char *)big);
-	while (big[i] && i < n)
+	while (big[i] && i < len)
 	{
 		while (big[i + n] == little[n] && (i + n) < len)
 		{
@@ -39,7 +39,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	return (NULL);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	const char *b = "Foo Bar Baz";
 	const char *l = "Bar";
@@ -49,4 +49,4 @@ int	main(void)
 	printf("   strnstr: %s\n", strnstr(b, l, i));
 
 	return (0);
-}
+} */
