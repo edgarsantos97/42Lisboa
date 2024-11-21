@@ -1,53 +1,56 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/19 21:52:34 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/21 15:09:35 by edgarrod         ###   ########.fr       */
+/*   Created: 2024/11/21 14:31:06 by edgarrod          #+#    #+#             */
+/*   Updated: 2024/11/21 14:48:41 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
+#include <string.h>
 #include <unistd.h>
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	unsigned int	i;
-	char			*sub;
-	size_t			n;
+	size_t	i;
+	size_t	n;
+	size_t	l;
+	char	*str;
 
-	if (!s)
+	if (!s1 && !s2)
 		return (NULL);
-	i = 0;
-	n = ft_strlen(s);
-	if (start > n)
-		n = 0;
-	else
-	{
-		n = n - start;
-		if (n > len)
-			n = len;
-	}
-	sub = malloc(sizeof(char) * (n + 1));
-	if (!sub)
+	i = ft_strlen(s1);
+	n = ft_strlen(s2);
+	l = 0;
+	str = malloc(sizeof(char) * (i + n + 1));
+	if (!str)
 		return (NULL);
-	while (i < len && s[i])
+	while (s1[l] != '\0')
 	{
-		sub[i] = s[start + i];
-		i++;
+		str[l] = s1[i];
+		l++;
 	}
-	sub[i] = '\0';
-	return (sub);
+	n = 0;
+	while (s2[n] != '\0')
+	{
+		str[l] = s2[n];
+		l++;
+		n++;
+	}
+	str[l] = '\0';
+	return (str);
 }
 
 /* int	main(void)
 {
-	const char *s = "Hello World!";
-
-	char *sub = ft_substr(s, 7, 7);
-	printf("ft_substr: |%s", sub);
+    char *s1 = "Hello";
+    char *s2 = "World!";
+    
+    char *str = ft_strjoin(s1, s2);
+    printf("ft_strjoin: |%s", str);
 } */

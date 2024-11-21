@@ -6,7 +6,7 @@
 #    By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/16 10:04:24 by edgarrod          #+#    #+#              #
-#    Updated: 2024/11/19 21:51:40 by edgarrod         ###   ########.fr        #
+#    Updated: 2024/11/21 14:30:33 by edgarrod         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,7 @@ SRCS =	ft_atoi.c \
 		ft_memset.c \
 		ft_strchr.c \
 		ft_strdup.c \
+		ft_strjoin.c \
 		ft_strlcat.c \
 		ft_strlcpy.c \
 		ft_strlen.c \
