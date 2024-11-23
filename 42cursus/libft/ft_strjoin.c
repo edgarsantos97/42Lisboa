@@ -6,7 +6,7 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 14:31:06 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/21 14:48:41 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/11/23 16:20:56 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,11 +46,13 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (str);
 }
 
-/* int	main(void)
+int	main(void)
 {
-    char *s1 = "Hello";
-    char *s2 = "World!";
-    
-    char *str = ft_strjoin(s1, s2);
-    printf("ft_strjoin: |%s", str);
-} */
+	char *s1 = "Hello";
+	char *s2 = "World!";
+	
+
+	char *str = ft_strjoin(s1, s2);
+	printf("ft_strjoin: |%s", str);
+
+} 

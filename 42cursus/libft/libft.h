@@ -6,7 +6,7 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 10:22:27 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/21 14:30:55 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/11/22 21:40:32 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ int					ft_strncmp(const char *str1, const char *str2, size_t n);
 char				*ft_strnstr(char const *big, char const *little,
 						size_t len);
 char				*ft_strrchr(const char *str, int c);
+char				*ft_strtrim(char const *s1, char const *set);
 char				*ft_substr(char const *s, unsigned int start, size_t len);
 int					ft_tolower(int c);
 int					ft_toupper(int c);

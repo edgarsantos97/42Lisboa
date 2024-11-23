@@ -6,7 +6,7 @@
 #    By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/16 10:04:24 by edgarrod          #+#    #+#              #
-#    Updated: 2024/11/21 14:30:33 by edgarrod         ###   ########.fr        #
+#    Updated: 2024/11/22 21:40:53 by edgarrod         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,6 +34,7 @@ SRCS =	ft_atoi.c \
 		ft_strncmp.c \
 		ft_strnstr.c \
 		ft_strrchr.c \
+		ft_strtrim.c \
 		ft_substr.c \
 		ft_tolower.c \
 		ft_toupper.c 
