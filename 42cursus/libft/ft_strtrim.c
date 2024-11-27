@@ -6,7 +6,7 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 21:41:09 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/23 19:11:50 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/11/26 23:57:27 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,43 +42,43 @@ int	ft_charstart(char const *s, char const *set)
 
 int	ft_charend(char const *s, char const *set, size_t slen)
 {
-    while (slen > 0 && ft_char(s[slen - 1], set) == 1)
-    {
-        slen--;
-    }
-    return (slen);
+	while (slen > 0 && ft_char(s[slen - 1], set) == 1)
+	{
+		slen--;
+	}
+	return (slen);
 }
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-    size_t s;
-    size_t e;
-    char *strim;
-    
-    s = ft_charstart(s1, set);
-    e = ft_charend(s1, set, ft_strlen(s1));
-    if (s >= e)
-    {
-        strim = malloc(1);
-        if (!strim)
-            return NULL;
-        strim[0] = '\0';
-        return strim;
-    }
-    strim = malloc(sizeof(char) * (e - s + 1));
-    if(!strim)
-        return NULL;
-    ft_strlcpy(strim, s1 + s, (e - s + 1));
-    return (strim);
+	size_t	s;
+	size_t	e;
+	char	*strim;
+
+	s = ft_charstart(s1, set);
+	e = ft_charend(s1, set, ft_strlen(s1));
+	if (s >= e)
+	{
+		strim = malloc(1);
+		if (!strim)
+			return (NULL);
+		strim[0] = '\0';
+		return (strim);
+	}
+	strim = malloc(sizeof(char) * (e - s + 1));
+	if (!strim)
+		return (NULL);
+	ft_strlcpy(strim, s1 + s, (e - s + 1));
+	return (strim);
 }
 
 /* int	main(void)
 {
-    
-    char *trim = ft_strtrim("abcHelloWorldabc", "abc");
-    printf("%s\n", trim);
-    trim = ft_strtrim("", "");
-    printf("%s\n", trim);
-    trim = ft_strtrim("", "abc");
-    printf("%s\n", trim);
+
+	char *trim = ft_strtrim("abcHelloWorldabc", "abc");
+	printf("%s\n", trim);
+	trim = ft_strtrim("", "");
+	printf("%s\n", trim);
+	trim = ft_strtrim("", "abc");
+	printf("%s\n", trim);
 } */

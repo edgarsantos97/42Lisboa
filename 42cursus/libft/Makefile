@@ -6,7 +6,7 @@
 #    By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/16 10:04:24 by edgarrod          #+#    #+#              #
-#    Updated: 2024/11/22 21:40:53 by edgarrod         ###   ########.fr        #
+#    Updated: 2024/11/26 23:05:02 by edgarrod         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,7 @@ SRCS =	ft_atoi.c \
 		ft_isascii.c \
 		ft_isdigit.c \
 		ft_isprint.c \
+		ft_itoa.c \
 		ft_memchr.c \
 		ft_memcmp.c \
 		ft_memcpy.c \
