@@ -6,7 +6,7 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 10:22:27 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/12/02 23:07:21 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/03 20:54:44 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,10 @@ void				*ft_memcpy(void *dest, const void *src, size_t i);
 void				*ft_memmove(void *dest, const void *src, size_t i);
 void				*ft_memset(void *str, int c, size_t i);
 void				ft_putchar_fd(char c, int fd);
+void				ft_putendl_fd(char *s, int fd);
+void				ft_putnbr_fd(int n, int fd);
+void				ft_putstr_fd(char *s, int fd);
+char				**ft_split(char const *s, char c);
 char				*ft_strchr(const char *str, int c);
 char				*ft_strdup(const char *s1);
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
