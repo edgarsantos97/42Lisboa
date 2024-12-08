@@ -6,22 +6,22 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 20:41:56 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/12/08 15:30:57 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/08 15:54:36 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <limits.h>
 
 int	ft_atoi(const char *str)
 {
 	size_t	i;
 	long	n;
 	int		v;
-	long	prevn;
+	int		p;
 
 	i = 0;
 	n = 0;
@@ -36,14 +36,16 @@ int	ft_atoi(const char *str)
 	}
 	while (str[i] >= '0' && str[i] <= '9' && str[i] != '\0')
 	{
-		prevn = n;
+		p = n;
 		n = n * 10 + (str[i] - 48);
+		if (n < p)
+			return (-1);
 		i++;
 	}
 	return (n * v);
 }
-
-/*  int	main(void)
+/* 
+ int	main(void)
 {
 	printf("%d\n", INT_MAX);
 	printf("%d\n", INT_MIN);
