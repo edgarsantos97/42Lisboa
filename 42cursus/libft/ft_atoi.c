@@ -6,7 +6,7 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 20:41:56 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/16 11:10:52 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/08 09:12:22 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <limits.h>
 
 int	ft_atoi(const char *str)
 {
 	size_t	i;
-	int		n;
+	long	n;
 	int		v;
+	long	prevn;
 
 	i = 0;
 	n = 0;
@@ -34,15 +36,20 @@ int	ft_atoi(const char *str)
 	}
 	while (str[i] >= '0' && str[i] <= '9' && str[i] != '\0')
 	{
+		prevn = n;
 		n = n * 10 + (str[i] - 48);
 		i++;
+		if (n < prevn)
+			return (-1);
 	}
 	return (n * v);
 }
 
-/* int	main(void)
+/*  int	main(void)
 {
-	char s[] = "- 12-34";
+	printf("%d\n", INT_MAX);
+	printf("%d\n", INT_MIN);
+	char s[] = "-2147483648";
 
 	printf("ft_atoi: %d\n", ft_atoi(s));
 	printf("   atoi: %d\n", atoi(s));

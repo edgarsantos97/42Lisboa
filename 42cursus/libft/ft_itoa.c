@@ -6,7 +6,7 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 23:06:08 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/26 23:57:47 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/08 09:20:13 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,8 +75,8 @@ char	*ft_itoa(int n)
 	return (str);
 }
 
-/* int	main(void)
+/*  int	main(void)
 {
-	char *s = ft_itoa(-1234567);
+	char *s = ft_itoa(0);
 	printf("%s", s);
-} */
+}  */

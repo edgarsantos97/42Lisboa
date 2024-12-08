@@ -6,7 +6,7 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 21:07:15 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/17 21:27:05 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/08 09:14:36 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-void	*ft_calloc(size_t count, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	size_t	i;
 	void	*n;
 
-	i = count * size;
-	if (count && size && ((i / size) != count))
+	i = nmemb * size;
+	if (nmemb && size && ((i / size) != nmemb))
 		return (NULL);
 	n = malloc(i);
 	if (!n)

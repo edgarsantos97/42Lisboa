@@ -6,7 +6,7 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 21:46:38 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/16 16:17:02 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/08 09:55:15 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,42 +15,44 @@
 #include <strings.h>
 #include <unistd.h>
 
-size_t	ft_strlcat(char *dest, const char *src, size_t n)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t	dest_len;
+	size_t	dst_len;
 	size_t	src_len;
 	size_t	i;
 
-	dest_len = 0;
+	dst_len = 0;
 	src_len = 0;
 	i = 0;
-	if (!dest && !n)
-		return (0);
-	while (dest[dest_len] != '\0' && dest_len < n)
-		dest_len++;
-	while (src[src_len] != '\0')
+	while (dst[dst_len] && dst_len < size)
+		dst_len++;
+	while (src[src_len])
 		src_len++;
-	if (n <= dest_len)
-		return (src_len + n);
-	while (src[i] != '\0' && dest_len + 1 < n)
+	if (dst_len >= size)
+		return (size + src_len);
+	while (src[i] && (dst_len + i) < (size - 1))
 	{
-		dest[dest_len] = src[i];
-		dest_len++;
+		dst[dst_len + i] = src[i];
 		i++;
 	}
-	if (dest_len < n)
-		dest[dest_len] = '\0';
-	return (dest_len + src_len - i);
+	dst[dst_len + i] = '\0';
+	return (dst_len + src_len);
 }
+
 /*
 int	main(void)
 {
 	char src[] = "Hello World!";
-	char dest[20];
-	size_t n;
+	char dest[5] = "";
+	char dest2[5] = "";
+	
+	int n = 12;
 
-	n = 5;
+	printf("ft_strlcat: %zu\n", ft_strlcat(dest, src, n));
+	printf("%s\n",dest);
+	printf("   strlcat: %zu\n", strlcat(dest2, src, n));
+	printf("%s\n",dest2);
 
-	printf("ft_strlcat: %d\n", ft_strlcat(dest, src, n));
-	printf("   strlcat: %lu\n", strlcat(dest, src, n));
-}*/
+	
+}
+*/

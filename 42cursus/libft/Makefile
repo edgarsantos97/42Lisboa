@@ -6,7 +6,7 @@
 #    By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/16 10:04:24 by edgarrod          #+#    #+#              #
-#    Updated: 2024/12/03 21:39:10 by edgarrod         ###   ########.fr        #
+#    Updated: 2024/12/08 08:55:46 by edgarrod         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,10 +46,8 @@ SRCS =	ft_atoi.c \
 		ft_substr.c \
 		ft_tolower.c \
 		ft_toupper.c 
-BONUS = 
 
 OBJS= $(SRCS:.c=.o)
-OBJ_B= $(BONUS:.c=.o)
 
 CC				= cc
 RM				= rm -f
@@ -62,10 +60,6 @@ all:			$(NAME)
 
 $(NAME):		$(OBJS)
 				ar rcs $(NAME) $(OBJS)
-
-bonus:			$(OBJS) $(OBJ_B)
-				$(RM) $(NAME)
-				ar rcs $(NAME) $(OBJS) $(OBJ_B)
 
 clean:
 				$(RM) $(OBJS) $(OBJ_B)
