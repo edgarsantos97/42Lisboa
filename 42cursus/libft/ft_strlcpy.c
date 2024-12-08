@@ -6,7 +6,7 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 21:06:41 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/16 12:12:31 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/08 15:40:37 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,8 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t n)
 	}
 	return (i);
 }
-/*
-int	main(void)
+
+/* int	main(void)
 {
 	const char	src[] = "Hello";
 	char		dest[10];
@@ -45,5 +45,4 @@ int	main(void)
 	n = 1;
 	printf("ft_strlcpy: %d\n", ft_strlcpy(dest, src, n));
 	printf("   strlcpy: %lu\n", strlcpy(dest, src, n));
-}
-*/
+} */

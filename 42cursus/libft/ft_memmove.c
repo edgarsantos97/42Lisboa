@@ -6,7 +6,7 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 19:00:19 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/16 11:01:39 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/08 15:01:06 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@ void	*ft_memmove(void *dest, const void *src, size_t i)
 	d = (unsigned char *)dest;
 	s = (unsigned const char *)src;
 	n = 0;
-	if (d <= s)
+	if (s > d)
 	{
-		while (n < i)
+		while (i > n)
 		{
 			d[n] = s[n];
 			n++;
@@ -42,16 +42,25 @@ void	*ft_memmove(void *dest, const void *src, size_t i)
 	return (d);
 }
 
-/* int	main(void)
+/*  
+int	main(void)
 {
-	char	src[] = "Hello World!";
-	char	dest1[50];
-	char	dest2[50];
+	char	src1[] = "Hello World!";
+	char	src2[] = "Hello World!";
+	char	src3[] = "Hello World!";
+	char	src4[] = "Hello World!";
+	char	dest1[20];
+	char	dest2[20];
 	size_t	i;
 
-	i = 7;
-	ft_memmove(dest1, src, i);
+	i = 13;
+	ft_memmove(dest1, src1, i);
 	printf("ft_memmove: %s\n", dest1);
-	memmove(dest2, src, i);
+	memmove(dest2, src2, i);
 	printf("   memmove: %s\n", dest2);
-} */
+
+	ft_memmove(src3 + 6, src3, 6);
+	printf("ft_memmove: %s\n", src3);
+	memmove(src4 + 6, src4, 6);
+	printf("   memmove: %s", src4);
+}  */

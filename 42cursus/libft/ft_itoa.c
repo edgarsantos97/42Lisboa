@@ -6,14 +6,14 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 23:06:08 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/12/08 09:20:13 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/08 12:43:56 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <unistd.h>
 
-int	ft_size(int n)
+static int	ft_size(int n)
 {
 	int	s;
 
@@ -35,7 +35,7 @@ int	ft_size(int n)
 	return (s);
 }
 
-char	*ft_char(int n, int size, char *str)
+static char	*ft_char(int n, int size, char *str)
 {
 	unsigned int	i;
 
@@ -75,8 +75,8 @@ char	*ft_itoa(int n)
 	return (str);
 }
 
-/*  int	main(void)
+/*   int	main(void)
 {
-	char *s = ft_itoa(0);
-	printf("%s", s);
-}  */
+	char *s = ft_itoa(10);
+	printf("%s\n", s);
+} */ 

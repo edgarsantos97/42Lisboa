@@ -6,13 +6,13 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 17:45:49 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/16 10:34:43 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/08 15:40:16 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
-#include <strings.h>
+#include <string.h>
 #include <unistd.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t i)
@@ -35,8 +35,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t i)
 	}
 	return (dest);
 }
-/*
-int	main(void)
+
+/* int	main(void)
 {
 	char	src[] = "Hello World!";
 	char	dest1[50];
@@ -48,5 +48,4 @@ int	main(void)
 	printf("ft_memcpy: %s\n", dest1);
 	memcpy(dest2, src, i);
 	printf("   memcpy: %s\n", dest2);
-}
-*/
+} */

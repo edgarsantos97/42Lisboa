@@ -6,7 +6,7 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 17:23:02 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/16 12:10:59 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/08 12:33:50 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,16 +28,51 @@ void	ft_bzero(void *s, size_t i)
 		n++;
 	}
 }
-/*
-int	main(void)
-{
-	char	c[] = "Hello";
-	int		i;
 
-	i = 0;
+/* int	main(void)
+{
+	char	c[6] = "Hello";
+	char	d[6] = "Hello";
+	int		i;
+	int		j;
+	int		x;
+	i = 3;
+	j = 0;
+	x = 6;
+	
+	while (j < x)
+	{
+		if (c[j] == '\0')
+		printf("0");
+		else
+		printf("%c",c[j]);
+		j++;
+	}
+	printf("\n");
+
+	
 	ft_bzero(c, i);
-	printf("ft_bzero: %s\n", c);
-	bzero(c, i);
-	printf("   bzero: %s\n", c);
+	j = 0;
+	while (j < x)
+	{
+		if (c[j] == '\0')
+		printf("0");
+		else
+		printf("%c",c[j]);
+		j++;
+	}
+	printf("\n");
+	
+	bzero(d, i);
+	j = 0;
+	while (j < x)
+	{
+		if (d[j] == '\0')
+		printf("0");
+		else
+		printf("%c",d[j]);
+		j++;
+	}
+	printf("\n");
 }
-*/
+ */

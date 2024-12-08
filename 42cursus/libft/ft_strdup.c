@@ -6,7 +6,7 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 21:30:24 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/17 21:58:24 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/08 13:34:59 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ char	*ft_strdup(const char *s1)
 
 /* int	main(void)
 {
+	// Duplica string e aloca memoria
     char s1[20] = "Hello World!";
     char *s2;
     int len1;

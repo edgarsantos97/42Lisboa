@@ -6,7 +6,7 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 22:49:55 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/12/08 10:13:05 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/08 13:41:59 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,10 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 
 int	main(void)
 {
-	char	s[] = "helloworld";
+	//Aplica uma funcao em cada caracter 
+	char	s1[] = "helloworld";
 
-	ft_striteri(s, modify_char);
-	printf("%s\n", s);
+	ft_striteri(s1, modify_char);
+	printf("%s\n", s1);
 	return (0);
 } */

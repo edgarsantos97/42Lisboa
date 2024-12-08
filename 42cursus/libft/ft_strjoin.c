@@ -6,7 +6,7 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 14:31:06 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/23 17:59:00 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/08 13:43:50 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,9 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str[l] = '\0';
 	return (str);
 }
-
-/* int	main(void)
+/* 
+// Concatenar duas strings
+int	main(void)
 {
 	char *s1 = "Hello";
 	char *s2 = "World!";

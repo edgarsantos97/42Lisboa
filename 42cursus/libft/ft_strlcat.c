@@ -6,7 +6,7 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 21:46:38 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/12/08 09:55:15 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/08 15:40:57 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,20 +39,19 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	return (dst_len + src_len);
 }
 
-/*
+/* 
+// concatenar duas string
 int	main(void)
 {
-	char src[] = "Hello World!";
-	char dest[5] = "";
-	char dest2[5] = "";
 	
-	int n = 12;
-
-	printf("ft_strlcat: %zu\n", ft_strlcat(dest, src, n));
-	printf("%s\n",dest);
-	printf("   strlcat: %zu\n", strlcat(dest2, src, n));
+	char src1[] = "Hello World!";
+	char src2[] = "Hello World!";
+	char dest1[50] = "-> ";
+	char dest2[50] = "-> ";
+	
+	
+	printf("ft_strlcat: %zu\n", ft_strlcat(dest1, src1, sizeof(dest1)));
+	printf("%s\n",dest1);
+	printf("   strlcat: %zu\n", strlcat(dest2, src2, sizeof(dest2)));
 	printf("%s\n",dest2);
-
-	
-}
-*/
+} */

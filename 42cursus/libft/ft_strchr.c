@@ -6,13 +6,13 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 14:36:37 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/16 10:30:55 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/08 13:32:11 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
-#include <strings.h>
+#include <string.h>
 #include <unistd.h>
 
 char	*ft_strchr(const char *str, int c)
@@ -34,15 +34,14 @@ char	*ft_strchr(const char *str, int c)
 	}
 	return (NULL);
 }
-/*
-int	main(void)
+
+/* int	main(void)
 {
 	char	*str;
 	char	c;
 
 	str = "Hello";
-	c = '\0';
+	c = 'l';
 	printf("ft_strchr: %s\n", ft_strchr(str, c));
 	printf("   strchr: %s\n", strchr(str, c));
-}
-*/
+} */

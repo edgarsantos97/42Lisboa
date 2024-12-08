@@ -6,7 +6,7 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 21:41:09 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/26 23:57:27 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/08 15:23:28 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-int	ft_char(char c, char const *set)
+static int	ft_char(char c, char const *set)
 {
 	size_t	i;
 
@@ -28,7 +28,7 @@ int	ft_char(char c, char const *set)
 	return (0);
 }
 
-int	ft_charstart(char const *s, char const *set)
+static int	ft_charstart(char const *s, char const *set)
 {
 	size_t	i;
 
@@ -40,7 +40,7 @@ int	ft_charstart(char const *s, char const *set)
 	return (i);
 }
 
-int	ft_charend(char const *s, char const *set, size_t slen)
+static int	ft_charend(char const *s, char const *set, size_t slen)
 {
 	while (slen > 0 && ft_char(s[slen - 1], set) == 1)
 	{

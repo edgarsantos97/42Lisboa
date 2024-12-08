@@ -6,7 +6,7 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 21:07:15 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/12/08 09:14:36 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/08 12:36:23 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-void	*ft_calloc(size_t nmemb, size_t size)
+void	*ft_calloc(size_t count, size_t size)
 {
 	size_t	i;
 	void	*n;
 
-	i = nmemb * size;
-	if (nmemb && size && ((i / size) != nmemb))
+	i = count * size;
+	if (count && size && ((i / size) != count))
 		return (NULL);
 	n = malloc(i);
 	if (!n)
@@ -30,14 +30,34 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	return (n);
 }
 
-/* int	main(void)
+/*  int	main(void)
 {
-	int *ptr1 = (int *)ft_calloc(10, sizeof(int));
+	char *ptr1 = ft_calloc(10, sizeof(int));
+	int j ;
+	
+	j = 0;
 	if (ptr1 != NULL)
 		printf("ft_calloc: Success!\n");
-	int *ptr2 = (int *)calloc(10, sizeof(int));
+	while (j < 40)
+	{
+		if(ptr1[j] == '\0')
+			printf("0");
+		else
+			printf("%c", ptr1[j]);
+		j++;
+	}
+	printf("\n");
+	j = 0;
+	char *ptr2 = calloc(10, sizeof(int));
 	if (ptr2 != NULL)
 		printf("   calloc: Success!\n");
-
+	while (j < 40)
+	{
+		if(ptr2[j] == '\0')
+			printf("0");
+		else
+			printf("%c", ptr2[j]);
+		j++;
+	}
 	return (0);
-} */
+} */ 

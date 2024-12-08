@@ -6,7 +6,7 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 16:24:00 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/16 16:55:35 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/08 15:40:23 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,20 +27,22 @@ void	*ft_memset(void *str, int c, size_t i)
 	}
 	return (str);
 }
-/*
+
+/* 
+// Alocar memoria com valor especifivo
 int	main(void)
 {
-	char	str[10];
+	char	str1[10];
+	char	str2[10];
 	char	c;
 	size_t	i;
 
 	c = 'A';
-	i = 5;
-	ft_memset(str, c, i);
-	str[i] = '\0';
-	printf("ft_memset: %s\n", str);
-	memset(str, c, i);
-	str[i] = '\0';
-	printf("   memset: %s\n", str);
-}
-*/
+	i = 2;
+	ft_memset(str1, c, i);
+	str1[i] = '\0';
+	printf("ft_memset: %s\n", str1);
+	memset(str2, c, i);
+	str2[i] = '\0';
+	printf("   memset: %s\n", str2);
+} */

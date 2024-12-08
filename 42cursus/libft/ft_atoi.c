@@ -6,7 +6,7 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 20:41:56 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/12/08 09:12:22 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/08 15:30:57 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,6 @@ int	ft_atoi(const char *str)
 		prevn = n;
 		n = n * 10 + (str[i] - 48);
 		i++;
-		if (n < prevn)
-			return (-1);
 	}
 	return (n * v);
 }
@@ -49,7 +47,7 @@ int	ft_atoi(const char *str)
 {
 	printf("%d\n", INT_MAX);
 	printf("%d\n", INT_MIN);
-	char s[] = "-2147483648";
+	char s[] = "2147483647";
 
 	printf("ft_atoi: %d\n", ft_atoi(s));
 	printf("   atoi: %d\n", atoi(s));

@@ -6,7 +6,7 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 20:02:44 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/16 10:30:44 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/08 15:40:07 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,15 +33,14 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-/*
-int	main(void)
+
+/* int	main(void)
 {
-	char	str1[] = "ADC";
-	char	str2[] = "ACC";
+	char	str1[] = "ABCD";
+	char	str2[] = "ABCD";
 	size_t	i;
 
 	i = 2;
 	printf("ft_memcmp: %d\n", ft_memcmp(str1, str2, i));
 	printf("   memcmp: %d\n", memcmp(str1, str2, i));
-}
-*/
+} */
