@@ -6,14 +6,11 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 17:36:52 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/16 10:30:34 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/13 15:21:10 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <ctype.h>
-#include <stdio.h>
-#include <unistd.h>
 
 int	ft_isdigit(int i)
 {

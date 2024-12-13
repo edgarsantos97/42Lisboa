@@ -6,15 +6,11 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 20:41:56 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/12/08 15:54:36 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/13 15:20:35 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <limits.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
 
 int	ft_atoi(const char *str)
 {

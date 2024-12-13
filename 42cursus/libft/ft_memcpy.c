@@ -6,14 +6,11 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 17:45:49 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/12/08 15:40:16 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/13 15:21:37 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
-#include <unistd.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t i)
 {

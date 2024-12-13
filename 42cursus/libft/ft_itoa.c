@@ -6,12 +6,11 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 23:06:08 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/12/08 12:43:56 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/13 15:21:26 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
 
 static int	ft_size(int n)
 {

@@ -6,14 +6,11 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 16:24:00 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/12/08 15:40:23 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/13 15:21:46 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
-#include <unistd.h>
 
 void	*ft_memset(void *str, int c, size_t i)
 {

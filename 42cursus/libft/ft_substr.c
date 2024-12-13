@@ -6,15 +6,11 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 21:52:34 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/23 17:11:45 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/13 15:23:11 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

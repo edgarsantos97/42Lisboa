@@ -6,14 +6,11 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 13:48:03 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/16 10:30:37 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/13 15:21:18 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <ctype.h>
-#include <stdio.h>
-#include <unistd.h>
 
 int	ft_isprint(int i)
 {

@@ -6,12 +6,11 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 20:54:57 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/12/03 21:37:34 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/13 15:22:09 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 static size_t	ft_word_c(char const *s, char c)
 {

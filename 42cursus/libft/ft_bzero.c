@@ -6,14 +6,11 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 17:23:02 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/12/08 12:33:50 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/13 15:20:50 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <strings.h>
-#include <unistd.h>
 
 void	ft_bzero(void *s, size_t i)
 {

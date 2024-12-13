@@ -6,14 +6,11 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 18:39:50 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/16 16:31:20 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/13 15:22:53 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
-#include <unistd.h>
 
 int	ft_strncmp(const char *str1, const char *str2, size_t n)
 {

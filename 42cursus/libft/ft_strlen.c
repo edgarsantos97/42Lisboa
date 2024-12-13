@@ -6,15 +6,11 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 14:10:22 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/16 11:04:35 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/13 15:22:44 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <ctype.h>
-#include <stdio.h>
-#include <string.h>
-#include <unistd.h>
 
 size_t	ft_strlen(const char *str)
 {

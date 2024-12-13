@@ -6,13 +6,11 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 14:30:58 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/11 14:35:18 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/13 15:23:44 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
-#include <unistd.h>
+#include "libft.h"
 
 int	ft_tolower(int c)
 {

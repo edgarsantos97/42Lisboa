@@ -6,14 +6,11 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 21:30:24 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/12/08 13:34:59 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/13 15:22:20 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
-#include <unistd.h>
 
 char	*ft_strdup(const char *s1)
 {

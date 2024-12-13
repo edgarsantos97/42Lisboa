@@ -6,14 +6,11 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 22:19:54 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/12/02 22:46:43 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/13 15:22:49 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

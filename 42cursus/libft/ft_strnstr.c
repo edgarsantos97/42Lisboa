@@ -6,13 +6,11 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 20:19:55 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/16 20:55:18 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/13 15:22:57 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {

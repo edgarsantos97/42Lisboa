@@ -6,14 +6,11 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 21:06:41 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/12/08 15:40:37 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/13 15:22:40 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <strings.h>
-#include <unistd.h>
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t n)
 {

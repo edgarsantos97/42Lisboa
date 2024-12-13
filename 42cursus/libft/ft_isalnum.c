@@ -6,14 +6,11 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 18:08:55 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/16 10:30:25 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/13 15:20:56 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <ctype.h>
-#include <stdio.h>
-#include <unistd.h>
 
 int	ft_isalnum(int i)
 {

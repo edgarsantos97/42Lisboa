@@ -6,14 +6,11 @@
 /*   By: edgarrod <edgarrod@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 18:21:00 by edgarrod          #+#    #+#             */
-/*   Updated: 2024/11/16 10:31:12 by edgarrod         ###   ########.fr       */
+/*   Updated: 2024/12/13 15:23:01 by edgarrod         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
-#include <unistd.h>
 
 char	*ft_strrchr(const char *str, int c)
 {
